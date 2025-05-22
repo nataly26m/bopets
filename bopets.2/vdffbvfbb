@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOPETS - Software a tu medida</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="segundologo.jpg" alt="Logo BOPETS" class="logo-img">
+        <div class="logo-text">
+          <span class="bopets-title">BOPETS</span>
+          <span class="bopets-subtitle">Servicios de programación para páginas web</span>
+        </div>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#">Nosotros</a></li>
+        <li class="dropdown">
+          <a href="servicios.html">Servicios</a>
+          <div class="dropdown-preview">
+            <ul>
+             <li>
+              <a href="desarolloweb.html">
+                  <i class="fas fa-code"></i> Desarrollo Web Personalizado
+                      </a>
+                </li>
+
+              <li><i class="fas fa-shopping-cart"></i> E-commerce y Tiendas Online</li>
+              <li><i class="fas fa-search"></i> Optimización SEO</li>
+              <li><i class="fas fa-tools"></i> Soporte y Mantenimiento</li>
+                 
+            </ul>
+          </div>
+        </li>
+            
+           
+       <li><a href="index.html#contacto" class="btn">Contacto</a></li>
+         
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SECCIÓN HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Cuatro mentes, una misión: tu web perfecta</h1>
+      <p>Creamos y mejoramos plataformas digitales a través de innovación, UX<br>de clase mundial y código limpio.</p>
+    </div>
+  </section>
+
+<section class="hero-bopets">
+  <h1>¡Tu aliado ideal en desarrollo web y soluciones digitales!</h1>
+  <p>
+    Bienvenidos a BOPETS, una empresa dedicada al desarrollo de páginas web personalizadas, modernas y funcionales. Ofrecemos soluciones digitales completas, desde la planeación hasta el mantenimiento, incluyendo tiendas en línea, diseño UX/UI, SEO y soporte técnico. Nos diferencia nuestro trato personalizado, un equipo especializado y el compromiso con la innovación. En BOPETS ayudamos a las empresas a crecer con herramientas digitales eficientes y adaptadas a sus necesidades.
+  </p>
+</section>
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+/* HERO */
+.hero {
+  background-image: url('pag\ perfect.jpg'); /* Cambia a tu imagen real */
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+  <h2>Nuestros Servicios</h2>
+    <ul class="lista-servicios">
+    
+  
+      <li>
+        <i class="fas fa-shopping-cart"></i> <a href="commerce.html">E-commerce y Tiendas Online</a>
+        <h3>E-commerce y Tiendas Online</h3>
+        <p>Plataformas para venta en línea con carrito, pagos y más.</p>
+      </li>
+      <li>
+        <h3>Optimización SEO</h3>
+        <p>Mejoramos tu posicionamiento en buscadores como Google.</p>
+      </li>
+      <li>
+        <h3>Soporte y Mantenimiento</h3>
+        <p>Atención técnica continua para mantener tu sitio actualizado.</p>
+      </li>
+      <li>
+        <h3>Desarrollo de Aplicaciones Web</h3>
+        <p>Apps modernas, escalables y seguras para tu negocio.</p>
+      </li>
+    </ul>
+    

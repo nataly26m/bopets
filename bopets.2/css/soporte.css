@@ -1,0 +1,396 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', sans-serif;
+  color: #000;
+}
+
+.bopets-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #000;
+}
+
+.bopets-subtitle {
+  font-size: 12px;
+  color: #444; /* gris oscuro, discreto pero visible */
+  margin-top: 4px;
+}
+
+
+/* NAV LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #007BFF;
+}
+
+.btn {
+  background-color: #00AEEF;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #007BFF;
+}
+
+
+/* HERO */
+.hero {
+  background-image: url('pag perfect.jpg'); /* Cambia a tu imagen real */
+  background-size: cover;
+  background-position: center;
+  height: 490px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.hero {
+  filter: none !important;
+  background-color: transparent !important;
+  position: relative;
+  /* otras propiedades */
+}
+.hero::before,
+.hero::after {
+  content: none !important;
+}
+
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #dddddd;
+}
+.logo-img {
+  height: 40px; /* antes estaba en 55px */
+  margin-right: 15px;
+}
+
+.dropdown-preview {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: none;
+  z-index: 1000;
+  width: 280px;
+}
+
+.dropdown-preview ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-preview li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Mostrar el preview al pasar el mouse */
+.dropdown:hover .dropdown-preview {
+  display: block;
+}
+
+.btn-regreso {
+  background-color: #00AEEF; /* Azul claro, como tu botón principal */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: background 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-regreso:hover {
+  background-color: #007BFF; /* Azul oscuro cuando se pasa el ratón */
+}
+.btn-regreso {
+  background-color: transparent; /* Sin fondo */
+  color: #004085; /* Azul rey para el texto */
+  padding: 5px 12px; /* Menos espaciado para hacerlo más pequeño */
+  font-weight: 500;
+  font-size: 15px; /* Fuente más pequeña */
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Centra el ícono y el texto */
+  gap: 8px; /* Menos espacio entre el ícono y el texto */
+  transition: all 0.3s ease; /* Transición suave */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  position: fixed; /* Fija el botón en la parte inferior derecha */
+  bottom: 20px; /* Distancia desde el borde inferior */
+  right: 20px; /* Distancia desde el borde derecho */
+}
+
+.btn-regreso:hover {
+  background-color: #004085; /* Azul rey de fondo al pasar el ratón */
+  color: white; /* El texto en blanco cuando el fondo es azul */
+}
+
+.btn-regreso i {
+  font-size: 12px; /* Tamaño del ícono más pequeño */
+}
+.seccion-uxui {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-lateral li {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #999;
+  cursor: pointer;
+}
+
+.menu-lateral .activo {
+  color: #000;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+}
+
+.contenido-uxui {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px 40px; /* Más espacio a los lados */
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.contenido-uxui h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #000000;
+  text-align: left;
+}
+
+.contenido-uxui p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #000000;
+  text-align: left;
+}
+
+.tags-uxui {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #333;
+  border-left: 2px solid #999;
+  padding-left: 10px;
+}
+.menu-lateral li {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: #888;
+  border-left: 3px solid transparent;
+  padding-left: 12px;
+  transition: all 0.3s ease;
+}
+
+.menu-lateral .activo {
+  color: #000;
+  border-color: #000;
+  font-weight: bold;
+}
+
+.tarjeta {
+  cursor: pointer;
+}
+
+.tarjeta:hover {
+  background: #d7fbe8;
+  color: #000;
+}
+
+.btn-cotizacion {
+  margin-top: 20px;
+  background-color: #004085;
+}
+
+.btn-cotizacion:hover {
+  background-color: #002f63;
+}
+
+
+/* Secciones */
+.descripcion h1 {
+  font-size: 2rem;
+  color: #2a2a2a;
+  margin-bottom: 15px;
+}
+
+.descripcion h2,
+.paquetes h2 {
+  font-size: 1.4rem;
+  color: #35417e;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.descripcion p,
+.descripcion ul {
+  margin-bottom: 15px;
+}
+
+.descripcion ul li {
+  margin-left: 20px;
+  list-style-type: square;
+}
+
+/* Paquetes */
+.paquetes {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.paquete {
+  background-color: white;
+  border: 2px solid #35417e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.paquete h3 {
+  font-size: 1.2rem;
+  color: #151e3f;
+  margin-bottom: 10px;
+}
+
+.paquete ul {
+  padding-left: 20px;
+}
+
+.paquete ul li {
+  margin-bottom: 8px;
+}
+
+/* Nota final */
+.nota {
+  margin-top: 30px;
+  font-size: 0.95rem;
+  background-color: #e9ecef;
+  padding: 15px;
+  border-left: 5px solid #35417e;
+  border-radius: 5px;
+}
+
+/* Botón regresar */
+.btn-regreso {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: #35417e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.btn-regreso i {
+  margin-right: 5px;
+}
+
+.btn-regreso:hover {
+  background-color: #2a2f6c;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .paquetes {
+    flex-direction: column;
+  }
+
+  .paquete {
+    width: 100%;
+  }
+}

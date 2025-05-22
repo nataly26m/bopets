@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOPETS - Software a tu medida</title>
+  <link rel="stylesheet" href="css/nosotros.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="nosotros.js">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="imagenes/segundologo.jpg" alt="Logo BOPETS" class="logo-img">
+        <div class="logo-text">
+          <span class="bopets-title">BOPETS</span>
+          <span class="bopets-subtitle">Servicios de programación para páginas web</span>
+        </div>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li class="dropdown">
+          <a href="servicios.html">Servicios</a>
+          <div class="dropdown-preview">
+            <ul>
+             <li>
+              <a href="desarolloweb.html">
+                  <i class="fas fa-code"></i> Desarrollo Web Personalizado
+                      </a>
+                </li>
+
+              <li><i class="fas fa-shopping-cart"></i> E-commerce y Tiendas Online</li>
+              <li><i class="fas fa-search"></i> Optimización SEO</li>
+              <li><i class="fas fa-tools"></i> Soporte y Mantenimiento</li>
+                 
+            </ul>
+          </div>
+        </li>
+            
+             <li><a href="index.html#contacto" class="btn">Contacto</a></li>
+
+      </ul>
+    </nav>
+  </header>
+   <!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <section class="contenedor-nosotros">
+    <div class="texto-nosotros">
+      <h1>Conoce al equipo detrás de BOPETS</h1>
+      <p><strong>Somos un equipo de estudiantes creativas y emprendedoras</strong> que fundamos BOPETS, una empresa especializada en el desarrollo de sitios web para fábricas. Nuestra misión es transformar la presencia digital de empresas industriales.</p>
+      <p><strong>Nataly Velázquez</strong> se encarga de la investigación de mercado, asegurándose de que cada página refleje las necesidades reales de nuestros clientes.</p>
+      <p><strong>Anet Reyes</strong> diseña con detalle cada interfaz, cuidando que el resultado sea visualmente atractivo y fácil de navegar.</p>
+      <p><strong>Britany Álvarez</strong> es nuestra programadora principal, dando vida funcional a todos nuestros diseños.</p>
+      <p><strong>Salma Promotor</strong> actúa como arquitecta web y promotora del proyecto, organizando y guiando el proceso general del desarrollo.</p>
+      <p>Juntas, creamos soluciones web que no solo son modernas y eficientes, sino que también reflejan nuestra pasión por el diseño, la tecnología y el trabajo en equipo.</p>
+    </div>
+    <div class="imagenes-nosotros">
+      <img src="imagenes/oficina 2.jpeg" alt="Equipo trabajando en la oficina">
+      <img src="imagenes/oficina 3.jpeg" alt="Productos y branding de BOPETS">
+
+    </div>
+  </section>
+
+  <section class="equipo-bopets">
+   
+    <div class="miembros">
+  <div class="miembro" onclick="mostrarTarjeta('anet.jpg', 'Anet Reyes', 'Diseñadora gráfica y creativa del proyecto.')">
+    <img src="anet.jpg" alt="Anet Reyes">
+    <p>Anet Reyes</p>
+  </div>
+  <div class="miembro" onclick="mostrarTarjeta('salma.jpg', 'Salma Promotor', 'Arquitecta web y promotora del proyecto.')">
+    <img src="salma.jpg" alt="Salma Promotor">
+    <p>Salma Promotor</p>
+  </div>
+  <div class="miembro" onclick="mostrarTarjeta('britany.jpg', 'Britany Álvarez', 'Programadora principal de BOPETS.')">
+    <img src="britany.jpg" alt="Britany Álvarez">
+    <p>Britany Álvarez</p>
+  </div>
+  <div class="miembro" onclick="mostrarTarjeta('nataly.jpg', 'Nataly Velázquez', 'Investigadora del proyecto y parte del equipo de desarrollo.')">
+    <img src="nataly.jpg" alt="Nataly Velázquez">
+    <p>Nataly Velázquez</p>
+  </div>
+</div>
+
+<!-- Tarjeta emergente -->
+<div class="tarjeta-info" id="tarjeta">
+  <span class="cerrar" onclick="cerrarTarjeta()">×</span>
+  <img src="" alt="Miembro" id="imagen-info">
+  <h3 id="nombre-info"></h3>
+  <p id="descripcion-info"></p>
+</div>
+
+  </section>
+  <!-- Aquí va todo el contenido HTML -->
+
+<script>
+  function mostrarTarjeta(imagen, nombre, descripcion) {
+    document.getElementById('imagen-info').src = imagen;
+    document.getElementById('nombre-info').textContent = nombre;
+    document.getElementById('descripcion-info').textContent = descripcion;
+    document.getElementById('tarjeta').style.display = 'flex';
+  }
+
+  function cerrarTarjeta() {
+    document.getElementById('tarjeta').style.display = 'none';
+  }
+</script>
+</body>
+</html>
+<button class="btn-regreso" onclick="window.location.href='index.html';">
+  <i class="fas fa-code"></i> Regresar al index
+</button>
+
+</body>
+</html>

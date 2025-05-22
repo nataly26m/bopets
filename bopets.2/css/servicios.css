@@ -1,0 +1,349 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', sans-serif;
+  color: #000;
+}
+
+.bopets-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #000;
+}
+
+.bopets-subtitle {
+  font-size: 12px;
+  color: #444; /* gris oscuro, discreto pero visible */
+  margin-top: 4px;
+}
+
+
+/* NAV LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #007BFF;
+}
+
+.btn {
+  background-color: #00AEEF;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #007BFF;
+}
+
+/* SELECT IDIOMA */
+.language {
+  border: 1px solid #000000;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+/* HERO */
+.hero {
+  background-image: url('banner.jpg'); /* Cambia a tu imagen real */
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* filtro oscuro */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #dddddd;
+}
+.logo-img {
+  height: 40px; /* antes estaba en 55px */
+  margin-right: 15px;
+}
+
+.servicios-contenedor {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.lista-servicios {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-servicios li {
+  background: #f9f9f9;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-left: 5px solid #3e64ff;
+  border-radius: 5px;
+}
+
+.lista-servicios h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.lista-servicios p {
+  margin: 5px 0 0;
+  color: #555;
+}
+/* Contenedor del dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-preview {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: none;
+  z-index: 1000;
+  width: 280px;
+}
+
+.dropdown-preview ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-preview li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Mostrar el preview al pasar el mouse */
+.dropdown:hover .dropdown-preview {
+  display: block;
+}
+
+/* Mostrar el preview al pasar el mouse */
+.dropdown:hover .dropdown-preview {
+  display: block;
+}
+
+.btn-regreso {
+  background-color: #00AEEF; /* Azul claro, como tu botón principal */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: background 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-regreso:hover {
+  background-color: #007BFF; /* Azul oscuro cuando se pasa el ratón */
+}
+.btn-regreso {
+  background-color: transparent; /* Sin fondo */
+  color: #004085; /* Azul rey para el texto */
+  padding: 5px 12px; /* Menos espaciado para hacerlo más pequeño */
+  font-weight: 500;
+  font-size: 15px; /* Fuente más pequeña */
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Centra el ícono y el texto */
+  gap: 8px; /* Menos espacio entre el ícono y el texto */
+  transition: all 0.3s ease; /* Transición suave */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  position: fixed; /* Fija el botón en la parte inferior derecha */
+  bottom: 20px; /* Distancia desde el borde inferior */
+  right: 20px; /* Distancia desde el borde derecho */
+}
+
+.btn-regreso:hover {
+  background-color: #004085; /* Azul rey de fondo al pasar el ratón */
+  color: white; /* El texto en blanco cuando el fondo es azul */
+}
+
+.btn-regreso i {
+  font-size: 12px; /* Tamaño del ícono más pequeño */
+}
+.seccion-formulario {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px;
+  background: linear-gradient(to right, #0d74b8, #063c6b);
+  color: #ffffff;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contenido-izquierda {
+  flex: 1 1 45%;
+}
+
+.contenido-izquierda h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.resaltado {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.contenido-izquierda p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #e2e2e2;
+  margin-bottom: 20px;
+}
+
+.presupuesto-label {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.presupuesto-opciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.presupuesto-opciones button {
+  padding: 10px 18px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ffffff;
+  color: #063c6b;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.presupuesto-opciones button:hover {
+  background-color: #d4ebff;
+}
+
+.formulario-derecha {
+  flex: 1 1 45%;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  color: #000000;
+}
+
+.formulario-derecha form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formulario-derecha input,
+.formulario-derecha select,
+.formulario-derecha textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.formulario-derecha textarea {
+  height: 100px;
+  resize: none;
+}
+
+.formulario-derecha button[type="submit"] {
+  padding: 12px;
+  background-color: #0d74b8;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.formulario-derecha button[type="submit"]:hover {
+  background-color: #095d94;
+}
